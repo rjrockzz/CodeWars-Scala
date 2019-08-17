@@ -1,4 +1,4 @@
 object FunctionBasic extends App {
-val Adder = (x: Int, y : Int) => x+y
-println(Adder(3,4))
+  def addThenMultiply(x: Int, y: Int)(multiplier: Int): Int = (x + y) * multiplier
+  println(addThenMultiply(1, 2)(3)) // 9
 }
